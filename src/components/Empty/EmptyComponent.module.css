@@ -1,0 +1,12 @@
+.emptyContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  z-index: 2;
+}
+
+.btn {
+  background: #6875d8;
+}

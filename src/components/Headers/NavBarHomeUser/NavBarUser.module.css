@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  min-width: 320px;
+  background: linear-gradient(45deg, #9890e3, #b1f4cf);
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.navbarLogo {
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.8rem;
+  text-shadow: 4px 2px 7px rgba(108, 109, 133, 0.5);
+}
+
+.navbarBredcumb {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+@media screen and (max-width: 320px) {
+  .breadcrumbBoard {
+    font-size: 16px;
+    padding: 6px 0;
+  }
+}

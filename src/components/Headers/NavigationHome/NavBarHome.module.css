@@ -1,0 +1,122 @@
+.header {
+  width: 100%;
+  min-width: 320px;
+  background: linear-gradient(45deg, #9890e3, #b1f4cf);
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 75vw;
+  justify-content: end;
+}
+
+.navbarLogo {
+  color: #fff;
+  justify-self: start;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.8rem;
+  text-shadow: 4px 2px 7px rgba(108, 109, 133, 0.5);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.links {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.links:hover {
+  background-color: #809ae2;
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+
+.linksMobile {
+  display: none;
+}
+
+.icon {
+  display: none;
+}
+
+.avatar {
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+  }
+
+  .menu.active {
+    width: 100%;
+    left: 0;
+    opacity: 1;
+    padding: 20px 0 40px;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+    background: linear-gradient(45deg, #30cfd0, #330867);
+  }
+
+  .links {
+    text-align: center;
+    padding: 1.5rem 0.5rem;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+  }
+
+  .links:hover {
+    background-color: #809ae273;
+    border-radius: 8px;
+  }
+
+  .icon {
+    display: contents;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .linksMobile {
+    display: block;
+    text-align: center;
+    padding: 1.2rem 0.5rem;
+    margin: 0 auto;
+    border-radius: 8px;
+    width: 80%;
+    background: #7f9ae1;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+
+  .linksMobile:hover {
+    background: #fff;
+    color: #4b56a4;
+    transition: 100ms;
+  }
+}

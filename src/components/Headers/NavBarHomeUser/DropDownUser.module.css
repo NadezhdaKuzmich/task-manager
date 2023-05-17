@@ -1,0 +1,21 @@
+.dropdown {
+  width: 180px;
+}
+
+.account {
+  font-weight: 600;
+  color: #8fa5eb;
+  padding: 0 20px;
+}
+
+.dropBtn {
+  margin-left: 8px;
+}
+
+.link {
+  border-radius: 50%;
+}
+
+.link:hover {
+  background-color: #aabeff47;
+}

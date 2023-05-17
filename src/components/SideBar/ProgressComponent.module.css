@@ -1,0 +1,9 @@
+.progress {
+  width: 100px;
+}
+
+@media screen and (max-width: 468px) {
+  .progress {
+    width: 80px;
+  }
+}
