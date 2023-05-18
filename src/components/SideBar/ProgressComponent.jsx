@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { Progress } from "antd";
-import styles from './ProgressComponent.module.css'
+import styles from "./ProgressComponent.module.css";
 
 const ProgressComponent = () => {
   const { boards } = useSelector((store) => store.boards);

@@ -14,7 +14,10 @@ import {
 } from "@ant-design/icons";
 import BoardModal from "../../pages/Forms/FormsModal/FormsForBoard/BoardModal";
 import BoardModalEdit from "../../pages/Forms/FormsModal/FormsForBoard/BoardModalEdit";
-import { setBoardActive, deleteBoard } from "../../slices/BoardSlice/BoardsSlice";
+import {
+  setBoardActive,
+  deleteBoard,
+} from "../../slices/BoardSlice/BoardsSlice";
 import { toggleModal } from "../../slices/ModalSlice";
 import ProgressComponent from "./ProgressComponent";
 import styles from "./SideBar.module.css";
@@ -39,7 +42,9 @@ const SideBar = () => {
   const getItems = () => {
     let items = [
       {
-        label: <span className={styles.count}>ALL BOARDS: {boards.length}</span>,
+        label: (
+          <span className={styles.count}>ALL BOARDS: {boards.length}</span>
+        ),
         key: "title",
         disabled: true,
       },
@@ -50,9 +55,7 @@ const SideBar = () => {
         label: (
           <Button
             type="link"
-            className={`boardBtn ${
-              board.isActive ? "active" : ""
-            }`}
+            className={`boardBtn ${board.isActive ? "active" : ""}`}
           >
             <span className="drop-btn">
               {board.isActive ? (
@@ -125,6 +128,7 @@ const SideBar = () => {
                   menu={{
                     items,
                   }}
+                  trigger={["click"]}
                   type="button"
                   size="large"
                 >

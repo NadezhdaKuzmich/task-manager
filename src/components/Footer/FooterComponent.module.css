@@ -1,0 +1,5 @@
+.footerWrap {
+    min-height: 72px;
+    background: linear-gradient(45deg, #9890e3, #b1f4cf);
+    border-top: 3px solid #b5b5ff;
+}

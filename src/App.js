@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import HomeUser from "./pages/HomeUser";
 import SignIn from "./pages/Forms/LogInForms/SignIn";
 import SignUp from "./pages/Forms/LogInForms/SignUp";
+import NotFound from "./pages/NotFound/NotFound";
 
 const App = () => {
   const { user } = useSelector((state) => state.user);
@@ -30,6 +31,7 @@ const App = () => {
               )
             }
           />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
       </Router>
     </div>

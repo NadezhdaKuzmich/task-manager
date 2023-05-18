@@ -80,41 +80,6 @@
   color: #8fa5eb;
 }
 
-:where(.css-dev-only-do-not-override-yp8pcc).ant-drawer .ant-drawer-title {
-  color: #565c8e;
-}
-
-:where(.css-dev-only-do-not-override-yp8pcc).ant-drawer
-  .ant-drawer-content.wrapper-drawer {
-  background: #fefefee6;
-  backdrop-filter: blur(1px);
-  border-radius: 15px;
-  border: 1px solid rgba(43, 43, 43, 0.568);
-}
-
-:where(.css-dev-only-do-not-override-yp8pcc).ant-modal .ant-modal-header {
-  background: none;
-}
-
-:where(.css-dev-only-do-not-override-yp8pcc).ant-modal .ant-modal-content {
-  background: #fefefee6;
-  backdrop-filter: blur(1px);
-}
-
-:where(.css-dev-only-do-not-override-yp8pcc).ant-input,
-:where(.css-dev-only-do-not-override-yp8pcc).ant-picker {
-  background: #cccccc0f;
-  backdrop-filter: blur(8px);
-}
-
-:where(.css-dev-only-do-not-override-yp8pcc).ant-btn-default {
-  background-color: #f4f4f7;
-}
-
-:where(.css-dev-only-do-not-override-yp8pcc).ant-badge .ant-badge-count {
-  background: #ff6a6c;
-}
-
 .ant-drawer-content-wrapper {
   width: 320px;
 }

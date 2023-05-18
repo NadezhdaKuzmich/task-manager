@@ -71,7 +71,7 @@ const NavBarHome = () => {
                   </Link>
                 </li>
               </ul>
-              <Button hide="hideBtn" text="Sign in"/>
+              <Button hide="hideBtn" text="Sign in" />
             </>
           ) : (
             <Link to="/user">

@@ -8,11 +8,12 @@ const MainContent = () => {
         <div className={styles.promo}>
           <div className={styles.title}>
             <h1>
-              Lorem ipsum <br/> dolor sit amet.
+              Lorem ipsum <br /> dolor sit amet.
             </h1>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis reiciendis magnam eveniet, voluptatem est corrupti.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            reiciendis magnam eveniet, voluptatem est corrupti.
           </p>
           <Button hide="block" text="Try it" />
         </div>

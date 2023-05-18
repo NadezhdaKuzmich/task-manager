@@ -2,7 +2,6 @@ import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../../../slices/AuthSlice/AuthSlise";
 import {
   UserOutlined,
-  SolutionOutlined,
   LogoutOutlined,
 } from "@ant-design/icons";
 import { Dropdown, Avatar, Button } from "antd";
@@ -14,7 +13,9 @@ const DropdDownUser = () => {
 
   const items = [
     {
-      label: <span className={styles.account}>{(user.username).toUpperCase()}</span>,
+      label: (
+        <span className={styles.account}>{user.username.toUpperCase()}</span>
+      ),
       key: "0",
       disabled: true,
     },
@@ -23,19 +24,11 @@ const DropdDownUser = () => {
     },
     {
       label: (
-          <Button type="link">
-            <SolutionOutlined /> <span className={styles.dropBtn}>profile</span>
-          </Button>
-      ),
-      key: "1",
-    },
-    {
-      label: (
         <Button type="link" onClick={() => dispatch(logout())}>
           <LogoutOutlined /> <span className={styles.dropBtn}>sign out</span>
         </Button>
       ),
-      key: "2",
+      key: "1",
     },
   ];
 
@@ -44,7 +37,7 @@ const DropdDownUser = () => {
       menu={{
         items,
       }}
-      trigger={['click']}
+      trigger={["click"]}
       placement="bottomRight"
       overlayClassName={styles.dropdown}
     >
@@ -52,7 +45,7 @@ const DropdDownUser = () => {
         <Avatar
           size="large"
           icon={<UserOutlined />}
-          style={{ backgroundColor: "#6775d842"}}
+          style={{ backgroundColor: "#6775d842" }}
         />
       </a>
     </Dropdown>

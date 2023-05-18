@@ -8,7 +8,7 @@ import {
   CalendarOutlined,
   ClockCircleOutlined,
 } from "@ant-design/icons";
-import { Button, Tooltip, Badge, Input, DatePicker } from "antd";
+import { Button, Badge, Input, DatePicker } from "antd";
 import TaskItem from "./TaskItem";
 import styles from "./Column.module.css";
 import {
@@ -193,10 +193,7 @@ const Column = ({ colId, handleDetails, handleAddTask }) => {
                     onChange={handleSearch}
                   />
                 ) : search === "date" ? (
-                  <RangePicker
-                    placement="bottom"
-                    onChange={handleDateRange}
-                  />
+                  <RangePicker placement="bottom" onChange={handleDateRange} />
                 ) : null
               ) : null
             ) : null}
@@ -217,23 +214,15 @@ const Column = ({ colId, handleDetails, handleAddTask }) => {
             })}
           </ul>
           {column.name !== "overdue" ? (
-            <Tooltip
-              placement="right"
-              title="Add new task"
-              color="#fefefee6"
-              overlayClassName="tooltip"
-              overlayInnerStyle={{ color: "#8fa5eb" }}
+            <Button
+              type="text"
+              className="task-btn"
+              icon={<PlusOutlined />}
+              id={column.name}
+              onClick={handleAdd}
             >
-              <Button
-                type="text"
-                className="task-btn"
-                icon={<PlusOutlined />}
-                id={column.name}
-                onClick={handleAdd}
-              >
-                Add new task...
-              </Button>
-            </Tooltip>
+              Add new task...
+            </Button>
           ) : null}
         </div>
       </div>

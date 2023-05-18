@@ -68,7 +68,7 @@
 .tasksList {
   display: flex;
   min-height: 132px;
-  max-height: 497px;
+  max-height: 70vh;
   overflow: auto;
   flex-direction: column;
   padding: 0 0 8px;
@@ -97,4 +97,10 @@
 .column {
   min-width: 220px;
   transform: rotateX(180deg);
+}
+
+@media screen and (min-width: 1440px) {
+  .tasksList {
+    max-height: 61vh;
+  }
 }

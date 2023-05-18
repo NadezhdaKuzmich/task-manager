@@ -79,7 +79,8 @@
     padding: 20px 0 40px;
     transition: all 0.5s ease-in;
     z-index: 1;
-    background: linear-gradient(45deg, #30cfd0, #330867);
+    background: linear-gradient(45deg,#6575caa1, #2f3f73e3);
+    backdrop-filter: blur(16px);  
   }
 
   .links {

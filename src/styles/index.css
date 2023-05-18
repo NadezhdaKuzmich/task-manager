@@ -28,6 +28,14 @@ html {
   margin: 0 auto;
 }
 
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 0 20px;
+}
+
 .form-button {
   background: #6875d8;
   width: 100%;
@@ -50,7 +58,7 @@ html {
   grid-template-columns: repeat(4, minmax(232px, 440px));
   justify-content: space-between;
   grid-gap: 20px 20px;
-  padding: 20px 20px;
+  padding: 30px 20px 20px;
   gap: 20px;
 }
 
@@ -126,7 +134,6 @@ html {
 .block {
   min-width: 140px;
   font-size: 18px;
-  font-weight: 600;
   letter-spacing: 1.2px;
 }
 
