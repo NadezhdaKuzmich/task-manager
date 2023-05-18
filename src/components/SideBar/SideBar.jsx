@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { Button, Tooltip, Badge, Dropdown } from "antd";
+import { Button, Badge, Dropdown } from "antd";
 import { HashLink as Link } from "react-router-hash-link";
 import {
   ProjectOutlined,
@@ -132,65 +132,41 @@ const SideBar = () => {
                   type="button"
                   size="large"
                 >
-                  <Tooltip
-                    title="List of boards"
-                    placement="topLeft"
-                    color="#fefefee6"
-                    overlayInnerStyle={{ color: "#8fa5eb" }}
-                    overlayClassName="tooltip"
-                  >
-                    <Button
-                      type="text"
-                      className={`${styles.addBoard} ${styles.side}`}
-                      icon={<MenuUnfoldOutlined />}
-                    >
-                      <span className="hide">BOARDS</span>
-                    </Button>
-                  </Tooltip>
-                </Dropdown>
-                <Tooltip
-                  title="Add new board"
-                  placement="topLeft"
-                  color="#fefefee6"
-                  overlayInnerStyle={{ color: "#8fa5eb" }}
-                  overlayClassName="tooltip"
-                >
                   <Button
                     type="text"
                     className={`${styles.addBoard} ${styles.side}`}
-                    icon={<AppstoreAddOutlined />}
-                    onClick={() =>
-                      dispatch(toggleModal({ modal: "isOpenAddBoard" }))
-                    }
+                    icon={<MenuUnfoldOutlined />}
                   >
-                    <span className="hide">ADD NEW</span>
+                    <span className="hide">BOARDS</span>
                   </Button>
-                </Tooltip>
+                </Dropdown>
+                <Button
+                  type="text"
+                  className={`${styles.addBoard} ${styles.side}`}
+                  icon={<AppstoreAddOutlined />}
+                  onClick={() =>
+                    dispatch(toggleModal({ modal: "isOpenAddBoard" }))
+                  }
+                >
+                  <span className="hide">ADD NEW</span>
+                </Button>
                 {board && overdueCol.tasks.length > 0 ? (
                   <div className={styles.hideOverdue}>
-                    <Tooltip
-                      title="Show overdue"
-                      placement="topLeft"
-                      color="#fefefee6"
-                      overlayInnerStyle={{ color: "#8fa5eb" }}
-                      overlayClassName="tooltip"
+                    <Badge
+                      count={overdueCol.tasks.length}
+                      color="#ff7072e3"
+                      offset={[-3, 5]}
                     >
-                      <Badge
-                        count={overdueCol.tasks.length}
-                        color="#ff7072e3"
-                        offset={[-3, 5]}
-                      >
-                        <Link to="#overdue">
-                          <Button
-                            type="text"
-                            className={`${styles.addBoard} ${styles.side}`}
-                            icon={<ClockCircleOutlined />}
-                          >
-                            <span className="hide">OVERDUE</span>
-                          </Button>
-                        </Link>
-                      </Badge>
-                    </Tooltip>
+                      <Link to="#overdue">
+                        <Button
+                          type="text"
+                          className={`${styles.addBoard} ${styles.side}`}
+                          icon={<ClockCircleOutlined />}
+                        >
+                          <span className="hide">OVERDUE</span>
+                        </Button>
+                      </Link>
+                    </Badge>
                   </div>
                 ) : null}
               </div>
