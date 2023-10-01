@@ -17,7 +17,7 @@ export const initialValue = {
               description:
                 'TypeScript (TS, TScript or "typescript") is a web development programming language based on JavaScript. Makes the code more understandable and reliable, adds static typing (variables are bound to certain data types), and can also compile to JavaScript. TypeScript is used by front-end and back-end developers.',
               status: "todo",
-              limit: new Date(2023, 4, 31, 16, 15, 0).toString(),
+              limit: new Date(2024, 2, 31, 16, 15, 0).toString(),
               responsible: ["Marichka Demydenko", "Pavlo Vashchenko"],
               visible: true,
             },
@@ -28,7 +28,7 @@ export const initialValue = {
               description:
                 "MongoDB is a document-oriented database management system that does not require a description of the table schema. Considered one of the classic examples of NoSQL systems, it uses JSON-like documents and a database schema. Written in C++.",
               status: "todo",
-              limit: new Date(2023, 4, 1, 17, 15, 0).toString(),
+              limit: new Date(2023, 10, 1, 17, 15, 0).toString(),
               responsible: ["Mykhailo Avdeenko", "Pavlo Vashchenko"],
               visible: true,
             },
@@ -60,7 +60,7 @@ export const initialValue = {
               description:
                 "Learn about the React router. React router is a routing library for React that will help you navigate through different pages in your application. Learn about loading the content of a particular page, passing parameters in a URL, redirecting, etc. Also, understand that the router is not part of React, it is a routing library built for React.",
               status: "in progress",
-              limit: new Date(2023, 4, 31, 18, 12, 0).toString(),
+              limit: new Date(2023, 10, 31, 18, 12, 0).toString(),
               responsible: [
                 "Maksym Hlushko",
                 "Pavlo Vashchenko",
@@ -75,7 +75,7 @@ export const initialValue = {
               description:
                 'Redux is an independent library that can be used with any UI logic or framework, including React, Angular, Vue, Ember, and vanilla JS. Despite the frequent use of Redux and React together, they are independent.\nUsing Redux with any platform usually involves a "UI binding" library to communicate between Redux and that platform, rather than directly interacting with the Redux store from the UI code.',
               status: "in progress",
-              limit: new Date(2023, 4, 31, 16, 15, 0).toString(),
+              limit: new Date(2023, 11, 31, 16, 15, 0).toString(),
               responsible: [
                 "Maksym Hlushko",
                 "Olena Boiko",

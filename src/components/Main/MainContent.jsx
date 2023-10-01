@@ -1,5 +1,6 @@
 import styles from "./MainContent.module.css";
 import Button from "../Buttons/Button";
+import photo from '../../images/1.jpg';
 
 const MainContent = () => {
   return (
@@ -17,7 +18,7 @@ const MainContent = () => {
           </p>
           <Button hide="block" text="Try it" />
         </div>
-        <img src="./1.jpg" alt="task management" className={styles.image} />
+        <img src={photo} alt="task management" className={styles.image} />
       </div>
     </div>
   );

@@ -133,8 +133,10 @@ const BoardsSlice = createSlice({
           (column) => column.id === task.column
         );
         const taskOverdue = column.tasks.splice(task.taskIndex, 1)[0];
-        taskOverdue.status = "overdue";
-        overdueCol.tasks.push(taskOverdue);
+        if (taskOverdue) {
+          taskOverdue.status = "overdue";
+          overdueCol.tasks.push(taskOverdue);
+        }
       });
       localStorage.setItem("boards", JSON.stringify(state));
     },

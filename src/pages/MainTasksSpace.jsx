@@ -16,7 +16,7 @@ const MainTasksSpace = () => {
   columns.forEach((column) => {
     if (column.name !== "done" && column.name !== "overdue") {
       column.tasks.forEach((task, index) => {
-        if (Date.parse(task.limit) < new Date()) {
+        if (Date.parse(task.limit) < Date.parse(new Date())) {
           filtered.push({ column: column.id, taskIndex: index });
         }
       });

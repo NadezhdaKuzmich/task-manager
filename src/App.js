@@ -22,7 +22,7 @@ const App = () => {
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route
-            path="/user"
+            path="user"
             element={
               user.username && user.password ? (
                 <HomeUser />
